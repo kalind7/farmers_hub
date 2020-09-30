@@ -32,10 +32,17 @@ final _restaurant1 = Restaurant(
   rating: 5,
   menu: [_burrito,  _pasta, _ramen, _pancakes, _burger, _pizza],
 );
-
+final _restaurant2 = Restaurant(
+  imageUrl: 'assets/images/restaurant0.jpg',
+  restaurantName: 'Restaurant 1',
+  address: 'Gaushala,ktm',
+  rating: 5,
+  menu: [_burrito,  _pasta, _ramen, _pancakes, _burger, _pizza],
+);
 final List<Restaurant> restaurants = [
   _restaurant0,
   _restaurant1,
+  _restaurant2,
 ];
 
 //User
@@ -57,7 +64,7 @@ final currentUser = User(
     Order(
       date: 'Sept 5, 2020',
       foodItem: _burger,
-      restaurant: _restaurant0,
+      restaurant: _restaurant2,
       quantity: 2,
     ),
     Order(
@@ -77,7 +84,7 @@ final currentUser = User(
     Order(
       date: 'Oct 11, 2020',
       foodItem: _burger,
-      restaurant: _restaurant1,
+      restaurant: _restaurant2,
       quantity: 2,
     ),
     Order(
@@ -95,7 +102,7 @@ final currentUser = User(
     Order(
       date: 'Nov 11, 2020',
       foodItem: _pancakes,
-      restaurant: _restaurant1,
+      restaurant: _restaurant2,
       quantity: 3,
     ),
     Order(
