@@ -1,4 +1,5 @@
 import 'package:farmers_hub/datas/data_all.dart';
+import 'package:farmers_hub/widgets/nearby_restaurants.dart';
 import 'package:farmers_hub/widgets/recent_orders.dart';
 import 'package:flutter/material.dart';
 
@@ -13,18 +14,18 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: (){},
+          onPressed: () {},
           iconSize: 30.0,
           icon: Icon(Icons.account_circle),
         ),
         title: Center(child: Text('Food App')),
-
         actions: [
           GestureDetector(
-            onTap: (){},
+            onTap: () {},
             child: Padding(
               padding: EdgeInsets.only(top: 18, right: 7),
-              child: Text('cart(${currentUser.cart.length})',
+              child: Text(
+                'cart(${currentUser.cart.length})',
                 style: TextStyle(fontSize: 20.0),
               ),
             ),
@@ -46,23 +47,25 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 contentPadding: EdgeInsets.all(20.0),
                 prefixIcon: Padding(
-                  padding: EdgeInsets.only(left:20.0),
+                  padding: EdgeInsets.only(left: 20.0),
                   child: Icon(Icons.search, size: 25.0),
                 ),
                 hintText: 'Search Food and Drinks.',
                 suffixIcon: Padding(
-                  padding:EdgeInsets.only(right: 20.0),
-                  child: Icon(Icons.clear, size: 25.0,),
+                  padding: EdgeInsets.only(right: 20.0),
+                  child: Icon(
+                    Icons.clear,
+                    size: 25.0,
+                  ),
                 ),
               ),
             ),
           ),
-
           RecentOrder(),
 
+          NearByRestaurants(),
         ],
       ),
-
     );
   }
 }

@@ -19,30 +19,46 @@ final _ramen =
 
 //Restaurant
 final _restaurant0 = Restaurant(
-  imageUrl: 'assets/images/restaurant0.jpg',
-  restaurantName: 'Restaurant 0',
+  imageUrl: 'images/restaurant0.jpg',
+  restaurantName: 'Restaurant 2',
   address: 'Thamel,ktm',
   rating: 5,
   menu: [_burrito,  _pasta, _ramen, _pancakes, _burger, _pizza],
 );
 final _restaurant1 = Restaurant(
-  imageUrl: 'assets/images/restaurant0.jpg',
+  imageUrl: 'images/restaurant2.jpg',
   restaurantName: 'Restaurant 1',
   address: 'Gaushala,ktm',
-  rating: 5,
+  rating: 4,
   menu: [_burrito,  _pasta, _ramen, _pancakes, _burger, _pizza],
 );
 final _restaurant2 = Restaurant(
-  imageUrl: 'assets/images/restaurant0.jpg',
+  imageUrl: 'images/restaurant1.jpg',
   restaurantName: 'Restaurant 1',
-  address: 'Gaushala,ktm',
-  rating: 5,
+  address: 'Old Baneshwor,ktm',
+  rating: 3,
+  menu: [_burrito,  _pasta, _ramen, _pancakes, _burger, _pizza],
+);
+final _restaurant3 = Restaurant(
+  imageUrl: 'images/restaurant3.jpg',
+  restaurantName: 'Restaurant 3',
+  address: 'New Baneshwor,ktm',
+  rating: 2,
+  menu: [_burrito,  _pasta, _ramen, _pancakes, _burger, _pizza],
+);
+final _restaurant4 = Restaurant(
+  imageUrl: 'images/restaurant4.jpg',
+  restaurantName: 'Restaurant 4',
+  address: 'Imadol,Lalitpur',
+  rating: 1,
   menu: [_burrito,  _pasta, _ramen, _pancakes, _burger, _pizza],
 );
 final List<Restaurant> restaurants = [
   _restaurant0,
   _restaurant1,
   _restaurant2,
+  _restaurant3,
+  _restaurant4,
 ];
 
 //User
