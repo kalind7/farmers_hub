@@ -69,20 +69,7 @@ class RecentOrder extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            margin: EdgeInsets.only(right: 20.0),
-            width: 48.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(25.0),
-              color: Theme.of(context).primaryColor,
-            ),
-            child: IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.add),
-              color: Colors.white,
-              iconSize: 30.0,
-            ),
-          ),
+          AddIcon(),
         ],
       ),
     );
@@ -112,6 +99,30 @@ class RecentOrder extends StatelessWidget {
               }),
         ),
       ],
+    );
+  }
+}
+
+class AddIcon extends StatelessWidget {
+  const AddIcon({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(right: 20.0),
+      width: 48.0,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(25.0),
+        color: Theme.of(context).primaryColor,
+      ),
+      child: IconButton(
+        onPressed: () {},
+        icon: Icon(Icons.add),
+        color: Colors.white,
+        iconSize: 30.0,
+      ),
     );
   }
 }

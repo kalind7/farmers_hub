@@ -1,4 +1,5 @@
 import 'package:farmers_hub/datas/data_all.dart';
+import 'package:farmers_hub/screens/cart_details.dart';
 import 'package:farmers_hub/widgets/nearby_restaurants.dart';
 import 'package:farmers_hub/widgets/recent_orders.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,9 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Center(child: Text('Food App')),
         actions: [
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>CartDetails() ));
+            },
             child: Padding(
               padding: EdgeInsets.only(top: 18, right: 7),
               child: Text(
